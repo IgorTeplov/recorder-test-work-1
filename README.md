@@ -1,5 +1,5 @@
 # Recorder (only linux)
-An easy way to write a small message at an increased volume.
+An easy way to record a small message at an increased volume.
 ## RU
 ### Для запуска понадобиться:
 
