@@ -178,6 +178,10 @@ class Recorder(object):
 
         os.system('clear')
         print(self.help_)
+        mix = alsaaudio.Mixer()
+        vol = mix.getvolume()[0]
+        vol = vol*2 if vol*2 < 100 else 100
+        mix.setvolume(vol)
 
         self.main_loop = threading.Thread(target=self._main_loop)
         self.main_loop.start()
